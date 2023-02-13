@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+nav{
+    background-color: black;
+    
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    
+}
+.nav_container{
+    width: 95%;
+   
+}
+.nav_container >a{
+    display: flex;
+    align-items: center;
+}
+.nav_rt_sect{
+    display: flex;
+    align-items: center; 
+    width: 21vw; 
+}
+
+.fst a{
+    display: flex;
+}
+#responsiveLogo img{
+    height: 65px;
+    
+}
+.sec{
+    
+    display: flex;
+    align-items: center;
+    margin-left: 30px;  
+}
+.secch{
+    display: flex;
+    align-items: center;
+    font-size: 10px;   
+}
+.nav_rt_sect img{
+    margin-right: 10px;
+}
+.wraper1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 18px;
+}
+.nav_menu{
+    font-weight:600;
+    font-size: 13px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav_menu .items{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width:1000px;
+
+}
+.nav_menu .items a{
+    margin:10px;
+    letter-spacing: 1px;
+   
+}
+.menu_icns{
+    /* width:110px; */
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: tomato; */
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.menu_icns img{
+    margin-left: 15px;
+}
+.search_anim{
+    position: absolute;
+    right:-70px;
+    top: 0;
+    height:100%;
+    transition:.8s ease-out;
+    width: 250px;
+    display: flex;
+    align-items: center;
+   /* background-color: yellow; */
+   
+}
+.search_anim input{
+    height: 100%;
+     background-color: black;
+     border: none;
+     font-size:15px;
+     flex: 1;
+     /* background-color: red; */
+    
+}
+/* .search_anim input::placeholder{
+    font-size: 12px;
+} */
+
+.translate_navg{
+    width: 1000px;
+}
+.smoothen{
+    position: absolute;
+    right: -20px;
+    background-color: black;
+    height: 100%;
+    width: 200px;
+    /* background-color: pink; */
+
+}
+.cross{
+    position: absolute;
+    right: -17px;
+    z-index: 5;
+    height: 100%;
+}
+.smoothen2{
+    position: absolute;
+    right: -38px;
+    z-index: 6;
+    height: 100%;
+    width: 50px;
+    background-color: black;
+}
+.cross_tran{
+    transition: .8s ease-in;
+    transform: translateX(-140px);
+}
+.cross_opp_tran{
+    transition: .8s ease-in;
+    transform: translateX(0px);
+}
+.test{
+    display: none;
+    /* width: 0px; */
+    height: 25px;
+    position: absolute;
+    right:0px;
+    top: 0;
+    height:100%;
+    /* background-color: aqua; */
+}
+.add_to_test{
+    display: block;
+}
+.toberemoved{
+    transition: .9s ease-in;
+}
+.rotate{
+    transform: rotateY(-90deg);
+    transition: .5s ease-out;
+}
+.vib_of_a{
+    /* transform: rotateY(-90deg); */
+    /* transition: .4s ease-out; */
+    animation: vib 1s ease-out ;
+}
+@keyframes vib{
+    0%{transform: scaleX(0);}
+    20%{transform: scaleX(1.1);}
+    40%{transform: scaleX(1);}
+    60%{transform: scaleX(1.05);}
+    80%{transform: scaleX(1);}
+    90%{transform: scaleX(1.02);}
+    100%{transform: scaleX(1);}
+}
+.cross{
+    font-size: 35px;
+    opacity: .6;
+}
+.searchIcon{
+    opacity: .6;
+} 
+
+/*------------------------------- responsive---------------------------- */
+@media screen and (max-width:600px){
+    .responsive{
+        display: none;
+        }
+    #search_icon{
+        position: absolute;
+        top: -15px;
+        right: 30px;
+    }
+    #callIcon{
+        position: absolute;
+        top: 28px;
+        right:0px;
+    }
+    nav{
+        height: 10vh;
+    }
+    #responsiveLogo{
+        position: absolute;
+        top: 5px;  
+        
+    }
+    #responsiveLogo img{
+        height: 60px;
+    }
+}
+
+/*------------------------------------- carousel --------------------------*/
+
+.sectionWraper{
+    width: 100vw;
+    height: 57vh;
+    background: url(images/Medcare_WebF1.png),linear-gradient(black,black);
+    background-repeat: no-repeat;
+    opacity: 0.96;
+    background-size: cover;
+    overflow:hidden;
+    position: relative;
+    user-select: none;
+
+}
+
+.slidingParticipants{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+
+@font-face{
+    font-family: fontForClinic;
+    src: url(./fonts/BigCaslonFB-Regular.woff);
+}
+
+.slidingParticipants p{
+    text-align: center;
+    font-size: 22px;
+    line-height: 35px;
+    
+    position: absolute;
+    top:140px;
+    left: 80px;
+    font-family: fontForClinic;
+}
+.rightOne{
+    display: flex;
+    position: absolute;
+    top: 90px;
+    right: 100px;
+    width: 200px;
+    height: 125px;
+    
+
+}
+.middleImage,.middleImage2{
+    margin: auto;
+    width: 420px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    
+    
+}
+.middleImage2{
+    margin-bottom: 0; 
+}
+.SlideButton{
+    width: 128px;
+    height: 128px;
+    border: none;
+    border-radius: 150px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    color: var(--ButtonText);
+    text-transform: uppercase;
+    
+}
+
+.sliderButtonDiv{
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 55px;
+
+}
+
+.sliderButton{
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    margin-right: 2px;
+    background-color: white;
+    /* transition: .5s ease-in; */
+    /* margin-right: 50px; */
+    cursor: pointer;
+   
+}
+
+
+/*------------------------------ making carousel responsive----------------- */
+@media (max-width:420px){
+    .middleImage, .middleImage2{
+        width: 300px;
+        margin-bottom: 100px;
+        
+    }
+    .slidingParticipants p{
+        top:190px;
+        width: 350px;
+        left: 50%;
+        transform: translateX(-50%);
+         
+    }
+    .sectionWraper{
+        height: 38vh;
+      
+    }
+    .SlideButton{
+        height: 30px;
+        background-color:var(--ButtonText);
+        color: white;
+    }
+    .rightOne{
+        width: 130px;
+        top:300px ;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .rightOne img{
+        display: none;
+    }
+    .sliderButtonDiv{
+        display: none;
+    }
+}
+
+/*------------------------------- for auto slide show ------------------------*/
+.addToRequestedSlidingParticipant{
+    position: absolute;
+    top: 0vh;
+    left: 100vw;
+    transition: .8s ease-in-out;
+    
+}
+.addToRequestedSlidingParticipant2{
+    position: absolute;
+    top: 0vh;
+    left: -100vw;
+    transition: .8s ease-in-out;
+    
+}
+.translateReq{
+    transform: translateX(-100vw);
+}
+.translateReq2{
+    transform: translateX(100vw);
+}
+.addToCurrentSlidingParticipant{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: .8s ease-in-out;
+    transform: translateX(-100vw);
+}
+.addToCurrentSlidingParticipant2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: .8s ease-in-out;
+    transform: translateX(100vw);
+}
+
+.sliderButtonActive{
+    width: 30px;
+    background-color: var(--ButtonText);
+}
+
+
+
+
+
+  

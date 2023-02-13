@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clonecliknic</title>
+    <link rel="stylesheet" href="clonecliknic.css">
+    <link rel="stylesheet" href="variables.css">
+    <!-- <script src="https://kit.fontawesome.com/ba33bcac57.js" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav_container">
+                <div class="wraper1">
+                    <a id="responsiveLogo" href=""><img src="images/logo.svg" alt=""></a>
+
+                    <div class="nav_rt_sect">
+                        <div class="fst responsive">
+                            <a href=""><img src="images/user.svg" alt="">
+                                <p>MyCare</p>
+                            </a>
+                        </div>
+                        <div class="sec">
+                            <a class="responsive" href="">
+                                <img src="images/whatsappLogo.svg" alt="">
+                            </a>
+
+                            <a id="callIcon" href="tel://" class="secch"><img src="images/call.svg" alt="">
+                                <h1 class="responsive">800MEDCARE</h1>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_menu">
+                    <div id="ite" class="items">
+                        <a class="responsive" href="">DOCTORS</a>
+                        <a class="responsive" href="">HOMECARE</a>
+                        <a class="responsive" href="">teleMEDCARE</a>
+                        <a class="responsive" href="">SPECIALITIES</a>
+                        <a class="responsive" href="">LOCATONS</a>
+                        <a class="responsive" href="">PACKAGES</a>
+                        <a class="responsive" href="">REFERRALS</a>
+                        <a class="responsive" href="">INTERNATIONAL PATIENTS</a>
+                        <div class="test" id="tst">
+                            <div id="anim_div" class="search_anim">
+                                <i class="fa-solid fa-magnifying-glass fa-xl searchIcon"></i>
+                                <input type="text" placeholder="Search www.medcare.ae">
+                            </div>
+                            <div class="smoothen">
+
+                            </div>
+                            <div id="s2" class="cross">
+                                <!-- <p style="font-size: 30px;color: green;font-weight: lighter;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">X</p> -->
+                                <i class="fa-solid fa-xmark cross" onclick="cross_cicked()"></i>
+                            </div>
+                            <div class="smoothen2">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu_icns">
+                        <img id="search_icon" onclick="search_clicked()" src="images/search.svg" alt="">
+                        <img class="responsive" src="images/person.svg" alt="">
+                        <img class="responsive" src="images/arabic.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="sectionWraper">
+            <div class="slidingParticipants">
+                <p>
+                    November’s Special Offer<br>for Only AED 350
+                </p>
+                <img class="middleImage2" src="images/Movember-Home.png" alt="">
+                <div class="rightOne">
+                    <img src="images/slashLine.svg" alt="">
+                    <a  href=""><button class="SlideButton"> Learn more</button></a>
+                </div>
+            </div>
+            
+            <div class="slidingParticipants">
+                <p>
+                    Beauty is about enhancing what you have.<br>
+                    Let yourself shine through.
+                </p>
+                <img class="middleImage2" src="images/Medcare-Aesthetics__1_.png" alt="">
+                <div class="rightOne">
+                    <img src="images/slashLine.svg" alt="">
+                    <a  href=""><button class="SlideButton"> Learn more</button></a>
+                </div>
+            </div>
+            <div class="slidingParticipants">
+                <p>
+                    SKIN 111 by Medcare <br> IV Drip@Home From AED 390
+                </p>
+                <img class="middleImage" src="images/7-copy-min__1_.png" alt="">
+                <div class="rightOne">
+                    <img src="images/slashLine.svg" alt="">
+                    <a  href=""><button class="SlideButton"> Learn more</button></a>
+                </div>
+            </div>
+            
+           
+
+            <div class="sliderButtonDiv">
+                <div class="sliderButton" onclick="hce(0) ; stopTimeinterval()"></div>
+                <div class="sliderButton" onclick="hce(1) ; stopTimeinterval()"></div>
+                <div class="sliderButton" onclick="hce(2) ; stopTimeinterval()"></div>
+            </div>
+
+        </div>
+    </section>
+    
+   <!-- <div style="width: 1000px;height: 500px;background-color: yellow;position: relative;display: flex;">
+    <div style="background-color: green;width: 250px;height: 250px;position: absolute;left: 10px;top: 50px;" ></div>   
+    <div style="background-color: red;width: 250px;height: 250px;" ></div>
+       
+       <div style="background-color: blue;width: 250px;height: 250px;position: absolute;top: 50px;right: 10px;" ></div>
+   </div> -->
+
+    
+</body>
+
+<script src="scripts.js"></script>
+</html>
